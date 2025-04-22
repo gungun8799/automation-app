@@ -1,13 +1,11 @@
 #!/bin/bash
 
-# Install Python & dependencies
+# Install Python and pip
 apt-get update && apt-get install -y python3 python3-pip
-pip3 install playwright
+
+# Install Playwright and browser binaries with system override
+pip3 install --break-system-packages playwright
 python3 -m playwright install
 
-# Start Node server
-<<<<<<< HEAD
+# Start the Node.js backend
 node server.js
-=======
-node server.js
->>>>>>> 5fbbe40 (Add custom start script for Render backend)
