@@ -6,4 +6,8 @@ pip3 install playwright
 python3 -m playwright install
 
 # Start Node server
+<<<<<<< HEAD
 node server.js
+=======
+node server.js
+>>>>>>> 5fbbe40 (Add custom start script for Render backend)
