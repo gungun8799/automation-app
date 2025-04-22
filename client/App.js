@@ -18,7 +18,7 @@ document.getElementById('runBtn').onclick = async () => {
   status.textContent = '⏳ Running automation...';
 
   try {
-    const res = await fetch('http://localhost:4000/run', {
+    const res = await fetch('https://automation-backend.onrender.com/run', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ url })
